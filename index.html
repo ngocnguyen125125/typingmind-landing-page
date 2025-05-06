@@ -11,33 +11,35 @@
 </head>
 <body>
     <header>
-        <div class="container">
-            <nav class="navbar">
-                <a href="#" class="logo">
-                    <img src="https://www.typingmind.com/logo.png" alt="TypingMind Logo">
-                    TypingMind
-                </a>
-                <div class="nav-links">
-                    <a href="#features">Features</a>
-                    <a href="#how-it-works">How It Works</a>
-                    <a href="#pricing">Pricing</a>
-                    <a href="#docs">Docs</a>
-                    <a href="#login" class="secondary-button">Sign In</a>
-                    <a href="#get-started" class="cta-button">Get Started</a>
+        <div class="navbar-container">
+            <div class="container">
+                <nav class="navbar-inner">
+                    <a href="#" class="logo">
+                        <img src="https://www.typingmind.com/logo.png" alt="TypingMind Logo">
+                        TypingMind
+                    </a>
+                    <div class="nav-links">
+                        <a href="#features">Features</a>
+                        <a href="#how-it-works">How It Works</a>
+                        <a href="#pricing">Pricing</a>
+                        <a href="#docs">Docs</a>
+                        <a href="#login" class="secondary-button">Sign In</a>
+                        <a href="#get-started" class="cta-button">Get Started</a>
+                    </div>
                     <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
                         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                         </svg>
                     </button>
-                </div>
-                <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                        <line x1="3" y1="12" x2="21" y2="12"></line>
-                        <line x1="3" y1="6" x2="21" y2="6"></line>
-                        <line x1="3" y1="18" x2="21" y2="18"></line>
-                    </svg>
-                </button>
-            </nav>
+                    <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Toggle menu">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="3" y1="12" x2="21" y2="12"></line>
+                            <line x1="3" y1="6" x2="21" y2="6"></line>
+                            <line x1="3" y1="18" x2="21" y2="18"></line>
+                        </svg>
+                    </button>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -57,7 +59,7 @@
         </div>
     </section>
 
-    <section class="features" id="features">
+    <section class="features-dark" id="features">
         <div class="container">
             <div class="section-header fade-in">
                 <h2>Powerful features that enhance your AI experience</h2>
@@ -170,48 +172,16 @@
             </div>
             <div class="integrations-grid">
                 <div class="integration-logo fade-in">
-                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25.5 12.5C25.5 10.0147 23.4853 8 21 8C18.5147 8 16.5 10.0147 16.5 12.5C16.5 14.9853 18.5147 17 21 17C23.4853 17 25.5 14.9853 25.5 12.5Z" fill="#6B7280"/>
-                        <path d="M83.5 12.5C83.5 10.0147 81.4853 8 79 8C76.5147 8 74.5 10.0147 74.5 12.5C74.5 14.9853 76.5147 17 79 17C81.4853 17 83.5 14.9853 83.5 12.5Z" fill="#6B7280"/>
-                        <path d="M66.5 17C66.5 14.5147 64.4853 12.5 62 12.5C59.5147 12.5 57.5 14.5147 57.5 17C57.5 19.4853 59.5147 21.5 62 21.5C64.4853 21.5 66.5 19.4853 66.5 17Z" fill="#6B7280"/>
-                        <path d="M42.5 17C42.5 14.5147 40.4853 12.5 38 12.5C35.5147 12.5 33.5 14.5147 33.5 17C33.5 19.4853 35.5147 21.5 38 21.5C40.4853 21.5 42.5 19.4853 42.5 17Z" fill="#6B7280"/>
-                        <path d="M42.0001 8C39.5148 8 37.5001 10.0147 37.5001 12.5C37.5001 14.9853 39.5148 17 42.0001 17C44.4854 17 46.5001 14.9853 46.5001 12.5C46.5001 10.0147 44.4854 8 42.0001 8Z" fill="#6B7280"/>
-                        <path d="M58.0001 8C55.5148 8 53.5001 10.0147 53.5001 12.5C53.5001 14.9853 55.5148 17 58.0001 17C60.4854 17 62.5001 14.9853 62.5001 12.5C62.5001 10.0147 60.4854 8 58.0001 8Z" fill="#6B7280"/>
-                        <path d="M50 12.5C50 10.0147 47.9853 8 45.5 8C43.0147 8 41 10.0147 41 12.5C41 14.9853 43.0147 17 45.5 17C47.9853 17 50 14.9853 50 12.5Z" fill="#6B7280"/>
-                        <path d="M50 21.5C50 19.0147 47.9853 17 45.5 17C43.0147 17 41 19.0147 41 21.5C41 23.9853 43.0147 26 45.5 26C47.9853 26 50 23.9853 50 21.5Z" fill="#6B7280"/>
-                        <path d="M58.5 21.5C58.5 19.0147 56.4853 17 54 17C51.5147 17 49.5 19.0147 49.5 21.5C49.5 23.9853 51.5147 26 54 26C56.4853 26 58.5 23.9853 58.5 21.5Z" fill="#6B7280"/>
-                    </svg>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4d/OpenAI_Logo.svg/1280px-OpenAI_Logo.svg.png" alt="OpenAI Logo">
                 </div>
                 <div class="integration-logo fade-in">
-                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M38 21C42.9706 21 47 16.9706 47 12C47 7.02944 42.9706 3 38 3C33.0294 3 29 7.02944 29 12C29 16.9706 33.0294 21 38 21Z" fill="#6B7280"/>
-                        <path d="M62 21C66.9706 21 71 16.9706 71 12C71 7.02944 66.9706 3 62 3C57.0294 3 53 7.02944 53 12C53 16.9706 57.0294 21 62 21Z" fill="#6B7280"/>
-                        <path d="M50 27C54.9706 27 59 22.9706 59 18C59 13.0294 54.9706 9 50 9C45.0294 9 41 13.0294 41 18C41 22.9706 45.0294 27 50 27Z" fill="#6B7280"/>
-                    </svg>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Anthropic_logo.svg/1200px-Anthropic_logo.svg.png" alt="Anthropic Logo">
                 </div>
                 <div class="integration-logo fade-in">
-                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <rect x="30" y="5" width="40" height="20" rx="4" fill="#6B7280"/>
-                        <path d="M35 10L45 15L35 20V10Z" fill="white"/>
-                        <rect x="50" y="10" width="15" height="2" rx="1" fill="white"/>
-                        <rect x="50" y="14" width="12" height="2" rx="1" fill="white"/>
-                        <rect x="50" y="18" width="10" height="2" rx="1" fill="white"/>
-                    </svg>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/45/Gemini_language_model_logo.png" alt="Gemini Logo">
                 </div>
                 <div class="integration-logo fade-in">
-                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M25 9H35V21H25V9Z" fill="#6B7280"/>
-                        <path d="M75 9H65V21H75V9Z" fill="#6B7280"/>
-                        <path d="M45 15L55 9V21L45 15Z" fill="#6B7280"/>
-                    </svg>
-                </div>
-                <div class="integration-logo fade-in">
-                    <svg width="100" height="30" viewBox="0 0 100 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M30 15H70" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M50 5V25" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M40 8L60 22" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
-                        <path d="M40 22L60 8" stroke="#6B7280" stroke-width="2" stroke-linecap="round"/>
-                    </svg>
+                    <img src="https://upload.wikimedia.org/wikipedia/de/1/1c/Mistral_AI_logo.svg" alt="Mistral AI Logo">
                 </div>
             </div>
         </div>
