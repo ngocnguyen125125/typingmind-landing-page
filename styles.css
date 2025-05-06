@@ -108,10 +108,40 @@ header {
     text-decoration: none;
     font-weight: 500;
     transition: var(--transition);
+    padding: 0.5rem 1rem;
+}
+
+[data-theme="dark"] .nav-links a {
+    color: white;
 }
 
 .nav-links a:hover {
     color: var(--primary);
+}
+
+.secondary-button {
+    background-color: var(--gray-200);
+    color: var(--gray-800);
+    padding: 0.625rem 1.25rem;
+    border-radius: var(--border-radius);
+    font-weight: 600;
+    transition: var(--transition);
+    text-decoration: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+}
+
+[data-theme="dark"] .secondary-button {
+    background-color: #4b5563;
+    color: white;
+}
+
+.secondary-button:hover {
+    background-color: var(--gray-300);
+    transform: translateY(-2px);
 }
 
 .cta-button {
@@ -147,6 +177,10 @@ header {
     border-radius: var(--border-radius);
     margin-left: 1rem;
     transition: var(--transition);
+}
+
+[data-theme="dark"] .theme-toggle {
+    color: white;
 }
 
 .theme-toggle:hover {
@@ -222,26 +256,6 @@ header {
     margin-bottom: 3rem;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-.secondary-button {
-    background-color: var(--gray-200);
-    color: var(--gray-800);
-    padding: 0.625rem 1.25rem;
-    border-radius: var(--border-radius);
-    font-weight: 600;
-    transition: var(--transition);
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    cursor: pointer;
-}
-
-.secondary-button:hover {
-    background-color: var(--gray-300);
-    transform: translateY(-2px);
 }
 
 .hero-image {
@@ -714,16 +728,6 @@ footer {
     background: linear-gradient(to right, var(--gray-100), var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
-}
-
-/* Dark mode nav fixes */
-[data-theme="dark"] .nav-links {
-    background-color: var(--gray-50);
-}
-
-[data-theme="dark"] .secondary-button {
-    background-color: #4b5563;
-    color: #E5E7EB;
 }
 
 /* Features section styling based on example image */
