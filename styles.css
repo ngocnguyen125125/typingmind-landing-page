@@ -105,7 +105,7 @@ header {
 
 .cta-button {
     background-color: var(--primary);
-    color: white;
+    color: white; /* Always white text for CTA buttons */
     padding: 0.625rem 1.25rem;
     border-radius: var(--border-radius);
     font-weight: 600;
@@ -426,8 +426,8 @@ header {
 }
 
 .integration-logo {
-    width: 120px;
-    height: 60px;
+    width: 160px;
+    height: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -443,15 +443,10 @@ header {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
 }
 
-.integration-logo svg {
+.integration-logo img {
     max-width: 100%;
     max-height: 100%;
-    opacity: 0.8;
-    transition: var(--transition);
-}
-
-.integration-logo:hover svg {
-    opacity: 1;
+    object-fit: contain;
 }
 
 /* Testimonials Section */
@@ -708,4 +703,81 @@ footer {
     background: linear-gradient(to right, var(--gray-100), var(--primary));
     -webkit-background-clip: text;
     background-clip: text;
+}
+
+/* Dark mode nav fixes */
+[data-theme="dark"] .nav-links {
+    background-color: var(--gray-50);
+}
+
+[data-theme="dark"] .secondary-button {
+    color: var(--gray-100);
+}
+
+/* Additional for navbar based on example image */
+.navbar-container {
+    background: linear-gradient(135deg, #9ac6fa, #ca89f1);
+    padding: 20px 0;
+    border-radius: var(--border-radius);
+}
+
+.navbar-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: var(--border-radius);
+    padding: 15px 25px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-inner .nav-links {
+    margin-left: auto;
+}
+
+.navbar-inner .nav-links a {
+    color: var(--gray-800);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+}
+
+.navbar-inner .nav-links .secondary-button {
+    background-color: #e2e8f0;
+    color: var(--gray-800);
+}
+
+.navbar-inner .nav-links .cta-button {
+    background-color: #6366F1;
+    color: white;
+}
+
+/* Features section styling based on example image */
+.features-dark {
+    background-color: #1e293b;
+    color: white;
+    padding: 4rem 0;
+    border-radius: var(--border-radius);
+}
+
+.features-dark .section-header h2,
+.features-dark .section-header p {
+    color: white;
+}
+
+.features-dark .feature-card {
+    background-color: #e5e7eb;
+    border-radius: var(--border-radius);
+}
+
+.features-dark .feature-card h3 {
+    color: #1e293b;
+}
+
+.features-dark .feature-card p {
+    color: #4b5563;
+}
+
+.features-dark .feature-icon {
+    background-color: #6366F1;
+    color: white;
 }
